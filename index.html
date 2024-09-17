@@ -7,23 +7,49 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/0fe667b678.js" crossorigin="anonymous"></script>
 </head>
-<body class="debug">
+<body class="debg">
     
     <div id="head">
         <nav>
-            <img id="logo-lg" src="./img/logo.svg" alt="">
-            <img id="logo-sm" src="./img/logo-small.svg" alt="">
-            <div id="nav-left">
-                <img id="left-line" src="./img/home.svg" alt=""> <span class="text-white">Home</span><br>
-                <img src="./img/search.svg" alt=""> <span>Cerca</span><br>
-                <img src="./img/libreria.svg" alt=""> <span> La tua libreria</span><br>
+            <div>
+                <img id="logo-lg" src="./img/logo.svg" alt="">
+                <img id="logo-sm" src="./img/logo-small.svg" alt="">
+                <div id="nav-left">
+                    <img id="left-line" src="./img/home.svg" alt=""> <span class="text-white">Home</span><br>
+                    <img src="./img/search.svg" alt=""> <span>Cerca</span><br>
+                    <img src="./img/libreria.svg" alt=""> <span> La tua libreria</span><br>
+                </div>
+                <div id="playlist">
+                    <strong>PLAYLIST</strong>
+                    <div><i class="fa-solid fa-plus"></i><span>Crea Playlist</span></div>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="profile">
+                <div>
+                    <img id="install-icon" src="./img/download.svg" alt="">
+                    <span>Installa app</span>
+                </div>
+                <hr>
+                <div>
+                    <img id="profile-icon" src="./img/profile.svg" alt="">
+                    <strong>John Doe</strong>
+                </div>
             </div>
         </nav>
         <main>
             <div id="upgrade"><span>EFFETTUA L'UPGRADE</span></div>
             <div id="songs">
                 <div id="songs-nav">
-                    <strong>IN EVIDENZA <hr></strong>
+                    <strong><div>IN EVIDENZA</div> <hr></strong>
                     <strong>PODCAST</strong>
                     <strong>CLASSIFICHE</strong>
                     <strong>GENERI E MOOD</strong>
@@ -33,26 +59,64 @@
                 <div id="songs-recent">
                     <h1>Recently played</h1>
                     <div class="col-2 col-3 col-6">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <h4>Heavy Metal</h4>
+                            <span>subtitles</span>
+                        </div>
+                        <div>
+                            <img src="./img/stranger.jpeg" alt="">
+                            <h4>Stranger Things. Vol. 1 (a Netflix Original Series Soundtrack</h4>
+                            <span>Kyle Dixon & Micheal Stein</span>
+                        </div>
+                        <div>
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <h4>A quiet place</h4>
+                            <span>subtitles</span>
+                        </div>
+                        <div>
+                            <img src="./img/split.jpeg" alt="">
+                            <h4>Split</h4>
+                            <span>subtitles</span>
+                        </div>
+                        <div>
+                            <img src="./img/cure.jpeg" alt="">
+                            <h4>A cure for wellness</h4>
+                            <span>subtitles</span>
+                        </div>
+                        <div>
+                            <img src="./img/sinister.jpeg" alt="">
+                            <h4>Sinister</h4>
+                            <span>subtitles</span>
+                        </div>
                         <div></div>
                         <div></div>
                     </div>
                 </div>
                 <div id="songs-foryou">
                     <h1>Creato per Jonh Doe</h1>
-                    <div class="col-2 col-3 col-6">
-                        <div></div>
-                        <div></div>
+                    <div class="col-2 col-3 col-6 justify-start">
+                        <div>
+                            <img src="./img/radar.jpeg" alt="">
+                            <h4>Release Radar</h4>
+                        </div>
+                        <div>
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <h4>Daily Mix 1</h4>
+                        </div>
                     </div>
                 </div>
                 <div id="songs-popular">
                     <h1>Artisti più popolari</h1>
-                    <div class="col-2 col-3 col-6">
-                        <div></div>
-                        <div></div>
+                    <div class="col-2 col-3 col-6 justify-start">
+                        <div>
+                            <img class="circle" src="./img/youg.jpeg" alt="">
+                            <h4>Lana del Rey</h4>
+                        </div>
+                        <div>
+                            <img class="circle" src="./img/einaudi.jpeg" alt="">
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
                     </div>
                 </div>
             </div>
