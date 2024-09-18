@@ -227,6 +227,35 @@ footer{
     #head{
         nav{
             width: 50px;
+            span{
+                display: none;
+            }
+            #playlist{
+                display: none;
+            }
+            hr{
+                display: none;
+            }
+            strong{
+                display: none;
+            }
+            #logo-lg{
+                display: none;
+            }
+            #logo-sm{
+                display: block;
+                
+            }
+            img{
+                padding: 10px;
+            }
+            #profile{
+                #install-icon{
+                    width: 39px;
+                    padding-left: 1px;
+                }
+                padding: 10px;
+            }
         }
         main{
             width: calc(100% - 50px);
