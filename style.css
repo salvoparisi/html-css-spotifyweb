@@ -82,6 +82,9 @@ body{
             padding-bottom: 2px;
         }
     }
+    strong:hover{
+        color: white;
+    }
     hr{
         
         border: none;
@@ -138,9 +141,29 @@ footer{
             color: var(--textgray);
             
         }
-        
+        i{
+            display: none;
+        }
         
     }
+    div:hover{
+        i{
+            display: block;
+            position: relative;
+            margin: auto;
+            right: 62%;
+            color: white;
+            font-size: 400%;
+        }
+        img{
+            filter: brightness(0.5);
+        }
+    }
+    .img-hover{
+        width: 100%;
+        display: flex;
+    }
+    
 }
 .justify-start{
     justify-content: start;
@@ -160,6 +183,9 @@ footer{
     strong{
         color: white;
     }
+    span:hover{
+        color: white;
+    }
     i{
         background-color: var(--pluscolor);
         color: black;
@@ -175,6 +201,9 @@ footer{
         li{
             padding: 10px 0;
             
+        }
+        li:hover{
+            color: white;
         }
     }
 }
@@ -283,7 +312,13 @@ footer{
         right: 270px;
         border-radius: 50px;
         padding: 10px 40px;
-    }            
+    }     
+    span:hover{
+        padding: 12px 50px;
+        font-size: 20px;
+        top: 25px;
+        right: 250px;
+    }       
 }
 /*start footer area*/
 #footer-title, #footer-play, #footer-volume{
@@ -339,13 +374,13 @@ footer{
             margin: 5px 1%;
             background: var(--textgray);
             border-radius: 50px;
-            height: 10px;
+            height: 5px;
             
         }
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             background: var(--pluscolor); 
             border-radius: 50%; 
             cursor: pointer;
@@ -370,13 +405,13 @@ footer{
         margin: 5px 1%;
         background: var(--textgray);
         border-radius: 50px;
-        height: 10px;
+        height: 5px;
         
     }
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         background: var(--pluscolor); 
         border-radius: 50%; 
         cursor: pointer;
@@ -400,6 +435,9 @@ footer{
     .text-white{
         color: white;
     }
+    }
+    span:hover{
+        color: white;
     }
     img{
         width: 50px;
