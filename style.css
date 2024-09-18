@@ -256,6 +256,103 @@ footer{
         padding: 10px 40px;
     }            
 }
+/*start footer area*/
+#footer-title, #footer-play, #footer-volume{
+    width: calc(100% / 3 );
+}
+#footer-title{
+    display: flex;
+    align-items: center;
+    img{
+        width: 70px;
+    }
+    #footer-text{
+        padding: 0 5% 0 1%;
+        strong{
+            color: white;
+        }
+        div{
+            color: var(--pluscolor);
+            font-size: 14px;
+        }
+        
+    }
+    i{
+        color: var(--textgray);
+        font-size: 20px;
+        padding: 5px 0;
+    }
+}
+#footer-play{
+    text-align: center;
+    white-space: nowrap;
+    i{
+        color: white;
+        padding: 0 1%;
+        margin: 30px 0 10px 0;
+        font-size: 20px;
+        position: relative;
+        top: -8px;
+    }
+    .play-icon{
+        font-size: 40px;
+        position: relative;
+        top: 0;
+        margin: 0 2%;
+    }
+    .time-container{
+        padding-bottom: 30px;
+        display: flex;
+        input[type="range"]{
+            -webkit-appearance: none; 
+            appearance: none;
+            width: 100%; 
+            margin: 5px 1%;
+            background: var(--textgray);
+            border-radius: 50px;
+            height: 10px;
+            
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: var(--pluscolor); 
+            border-radius: 50%; 
+            cursor: pointer;
+        }
+        
+        span{
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+#footer-volume{
+    text-align: end;
+    i{
+        color: white;
+        padding: 0 2%;
+    }
+    input[type="range"]{
+        -webkit-appearance: none; 
+        appearance: none;
+        width: 20%; 
+        margin: 5px 1%;
+        background: var(--textgray);
+        border-radius: 50px;
+        height: 10px;
+        
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background: var(--pluscolor); 
+        border-radius: 50%; 
+        cursor: pointer;
+    }
+}
 
 /*start nav area*/
 #logo-lg{
@@ -285,3 +382,6 @@ footer{
         
     }
 }
+
+/*Start Footer Aera*/
+
