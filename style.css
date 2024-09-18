@@ -55,7 +55,7 @@ body{
         background-color: black;
         color: var(--textgray);
         height: calc(100vh - 100px);
-        
+        overflow: auto;
         
     }
     main{
@@ -183,8 +183,11 @@ footer{
     strong{
         color: white;
     }
-    span:hover{
+    div:hover{
         color: white;
+        i{
+            background-color: white;
+        }
     }
     i{
         background-color: var(--pluscolor);
@@ -339,7 +342,12 @@ footer{
             color: var(--pluscolor);
             font-size: 14px;
         }
-        
+        div:hover{
+            text-decoration: underline;
+        }
+    }
+    i:hover{
+        color: white;
     }
     i{
         color: var(--textgray);
@@ -350,26 +358,41 @@ footer{
 #footer-play{
     text-align: center;
     white-space: nowrap;
+    .i-footer-container{
+        max-width: 300px;
+        margin: auto;
+    }
+    .i-footer-play{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        
+    }
     i{
+        padding: 0 5px;
         color: white;
-        padding: 0 1%;
-        margin: 30px 0 10px 0;
         font-size: 20px;
         position: relative;
         top: -8px;
     }
     .play-icon{
         font-size: 40px;
-        position: relative;
-        top: 0;
-        margin: 0 2%;
+        
+        width: 100px;
+        
+    }
+    .play-icon:hover{
+        font-size: 45px;
+        
     }
     .time-container{
-        padding-bottom: 30px;
+        position: absolute;
+        bottom: 10px;
+        width: calc(100% / 3);
         display: flex;
         input[type="range"]{
             -webkit-appearance: none; 
-            appearance: none;
             width: 100%; 
             margin: 5px 1%;
             background: var(--textgray);
