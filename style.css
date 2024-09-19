@@ -147,22 +147,27 @@ footer{
         
     }
     div:hover{
+        
         i{
-            display: block;
-            position: relative;
-            margin: auto;
-            right: 62%;
+            display: flex;
             color: white;
-            font-size: 400%;
-            
+            font-size: 60px;
+            position: absolute;
+            width: 100%;
+            aspect-ratio: 1/1;
+            justify-content: center;
+            align-items: center;
         }
         img{
             filter: brightness(0.5);
+            display: flex;
+            
         }
     }
     .img-hover{
         width: 100%;
-        display: flex;
+        display: flex; 
+        position: relative;
     }
     
 }
