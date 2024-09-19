@@ -115,7 +115,9 @@ footer{
     height: calc(100vh - 200px);
     padding: 30px 20px;
 }
-
+.dis-none{
+        display: none;
+    }
 .col-2{
     padding: 20px 0;
     display: flex;
@@ -125,14 +127,14 @@ footer{
     div{
         padding-bottom: 20px;
         width: calc(100% / 12 * 2);
+        max-width: 250px;
         img{
-            max-width: 600px;
             width: 100%;
             position: relative;
             left: -10px;
         }
         .circle{
-            border-radius: 50%;
+            border-radius: 9999px;
         }
         h4{
             color: white;
@@ -146,6 +148,7 @@ footer{
         }
         
     }
+    
     div:hover{
         
         i{
@@ -157,10 +160,10 @@ footer{
             aspect-ratio: 1/1;
             justify-content: center;
             align-items: center;
+            padding-bottom: 2%;
         }
         img{
             filter: brightness(0.5);
-            display: flex;
             
         }
     }
@@ -245,15 +248,18 @@ footer{
     }
 }
 /*start media area*/
-@media (max-width: 1200px){
+@media (max-width: 1100px){
     .col-3{
         flex-wrap: wrap;
         div{
             width: calc(100% / 12 * 3);
         }
     }
+    .dis-none{
+        display: block;
+    }
 }
-@media (max-width: 900px){
+@media (max-width: 700px){
     .col-6{
         flex-wrap: wrap;
         div{
@@ -261,7 +267,7 @@ footer{
         }
     }
 }
-@media (max-width:700px){
+@media (max-width:600px){
     #head{
         nav{
             
