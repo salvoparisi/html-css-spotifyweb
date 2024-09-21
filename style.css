@@ -247,79 +247,6 @@ footer{
         top: -14px;
     }
 }
-/*start media area*/
-@media (max-width: 1100px){
-    .col-3{
-        flex-wrap: wrap;
-        div{
-            width: calc(100% / 12 * 3);
-        }
-    }
-    .dis-none{
-        display: block;
-    }
-}
-@media (max-width: 700px){
-    .col-6{
-        flex-wrap: wrap;
-        div{
-            width: calc(100% / 12 * 6);
-        }
-    }
-}
-@media (max-width:600px){
-    #head{
-        nav{
-            
-            width: 50px;
-            span{
-                display: none;
-            }
-            #playlist{
-                display: none;
-            }
-            hr{
-                display: none;
-            }
-            strong{
-                display: none;
-            }
-            #logo-lg{
-                display: none;
-            }
-            #logo-sm{
-                display: block;
-                
-            }
-            img{
-                padding: 0 10px;
-            }
-            #profile{
-                padding: 0;
-                #install-icon{
-                    padding-right: 3px;
-                    width: 39px;
-                }
-                #profile-icon{
-                    margin-left: 8px;
-                }
-                
-            }
-        }
-        main{
-            width: calc(100% - 50px);
-            #upgrade{
-                span{
-                    right: 75px;
-                }
-                span:hover{
-                    right: 50px;
-                }
-            }
-        }
-    }
-    
-}
 
 #upgrade{
     width: 100%;
@@ -496,14 +423,18 @@ footer{
 
 /*start nav area*/
 #logo-lg{
-    padding: 25px 0 10px 20px;
-    width: 150px;
+    padding: 25px 50px 10px 20px;
+    width: 200px;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+    margin: 0;
 }
 #logo-sm{
     display: none;
 }
 #nav-left{
-    margin-top: 10px;
+    margin-top: 100px;
     span{
         position: relative;
         top: -12px;
@@ -525,6 +456,81 @@ footer{
         
     }
 }
+{}
 
-/*Start Footer Aera*/
 
+/*start media area*/
+@media (max-width: 1100px){
+    .col-3{
+        flex-wrap: wrap;
+        div{
+            width: calc(100% / 12 * 3);
+        }
+    }
+    .dis-none{
+        display: block;
+    }
+}
+@media (max-width: 700px){
+    .col-6{
+        flex-wrap: wrap;
+        div{
+            width: calc(100% / 12 * 6);
+        }
+    }
+}
+@media (max-width:600px){
+    #head{
+        nav{
+            #nav-left{
+                margin-top: 20px;
+            }
+            width: 50px;
+            span{
+                display: none;
+            }
+            #playlist{
+                display: none;
+            }
+            hr{
+                display: none;
+            }
+            strong{
+                display: none;
+            }
+            #logo-lg{
+                display: none;
+            }
+            #logo-sm{
+                display: block;
+                
+            }
+            img{
+                padding: 0 10px;
+            }
+            #profile{
+                padding: 0;
+                #install-icon{
+                    padding-right: 3px;
+                    width: 39px;
+                }
+                #profile-icon{
+                    margin-left: 8px;
+                }
+                
+            }
+        }
+        main{
+            width: calc(100% - 50px);
+            #upgrade{
+                span{
+                    right: 75px;
+                }
+                span:hover{
+                    right: 50px;
+                }
+            }
+        }
+    }
+    
+}
