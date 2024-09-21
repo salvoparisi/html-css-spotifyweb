@@ -69,8 +69,129 @@ body{
     }
 }
 
+/*start nav area*/
+#logo-lg{
+    padding: 25px 50px 10px 20px;
+    width: 200px;
+    position: fixed;
+    background-color: black;
+    z-index: 10;
+    margin: 0;
+}
+#logo-sm{
+    display: none;
+}
+#nav-left{
+    margin-top: 100px;
+    span{
+        position: relative;
+        top: -12px;
+    }
+    .text-white{
+        color: white;
+    }
+    }
+    span:hover{
+        color: white;
+    }
+    img{
+        width: 50px;
+        padding-left: 20px;
+        margin: 5px 0;
+    }
+    #left-line{
+        border-left: 1px var(--hrcolor) solid;
+        
+    }
+}
+{}
+#playlist{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    strong{
+        color: white;
+    }
+    div:hover{
+        color: white;
+        i{
+            background-color: white;
+        }
+    }
+    i{
+        background-color: var(--pluscolor);
+        color: black;
+        padding: 8px;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    span{
+        padding-left: 10px;
+    }
+    ul{
+        list-style: none;
+        li{
+            padding: 10px 0;
+            
+        }
+        li:hover{
+            color: white;
+        }
+    }
+}
+#profile{
+    position: relative;
+    padding: 0 20px;
+    img{
+        padding: 0;
+        margin: 0;
+    }
+    #install-icon{
+        width: 20px;
+    }
+    #profile-icon{
+        background-color: var(--pluscolor);
+        border-radius: 50%;
+        width: 35px;
+        padding: 0 2px;
+        margin: 10px 5px 3px 0;
+    }
+    span{
+        position: relative;
+        top: -5px;
+        padding-left: 5px;
+    }
+    strong{
+        color: white;
+        position: relative;
+        top: -14px;
+    }
+}
 
-
+/*start main area*/
+#upgrade{
+    width: 100%;
+    height: 100px;            
+    background-color: rgba(0, 0, 0, 0.5);            
+    position: fixed;            
+    top: 0;
+    color: white;
+    z-index: 10;
+    span{
+        border: 1px white solid;
+        position: absolute;
+        top: 30px;
+        right: 270px;
+        border-radius: 50px;
+        padding: 10px 40px;
+    }     
+    span:hover{
+        padding: 12px 50px;
+        font-size: 20px;
+        top: 25px;
+        right: 250px;
+    }       
+}
 #songs-nav{
     display: flex;
     justify-content: center;
@@ -95,19 +216,7 @@ body{
     }     
 }
 
-footer{
-    height: 100px;
-    width: 100%;
-    background-color: var(--footgray);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    #footer-title{
-        text-align: left;
-    }
-    position: absolute;
-    bottom: 0;
-}
+
 
 
 #songs{
@@ -185,93 +294,23 @@ footer{
     }
 }
 
-#playlist{
-    padding-left: 20px;
-    padding-top: 20px;
-    font-weight: bold;
-    strong{
-        color: white;
-    }
-    div:hover{
-        color: white;
-        i{
-            background-color: white;
-        }
-    }
-    i{
-        background-color: var(--pluscolor);
-        color: black;
-        padding: 8px;
-        font-size: 20px;
-        margin: 15px 0;
-    }
-    span{
-        padding-left: 10px;
-    }
-    ul{
-        list-style: none;
-        li{
-            padding: 10px 0;
-            
-        }
-        li:hover{
-            color: white;
-        }
-    }
-}
-#profile{
-    position: relative;
-    padding: 0 20px;
-    img{
-        padding: 0;
-        margin: 0;
-    }
-    #install-icon{
-        width: 20px;
-    }
-    #profile-icon{
-        background-color: var(--pluscolor);
-        border-radius: 50%;
-        width: 35px;
-        padding: 0 2px;
-        margin: 10px 5px 3px 0;
-    }
-    span{
-        position: relative;
-        top: -5px;
-        padding-left: 5px;
-    }
-    strong{
-        color: white;
-        position: relative;
-        top: -14px;
-    }
-}
 
-#upgrade{
-    width: 100%;
-    height: 100px;            
-    background-color: rgba(0, 0, 0, 0.5);            
-    position: fixed;            
-    top: 0;
-    color: white;
-    z-index: 10;
-    span{
-        border: 1px white solid;
-        position: absolute;
-        top: 30px;
-        right: 270px;
-        border-radius: 50px;
-        padding: 10px 40px;
-    }     
-    span:hover{
-        padding: 12px 50px;
-        font-size: 20px;
-        top: 25px;
-        right: 250px;
-    }       
-}
+
+
 /*start footer area*/
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: var(--footgray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #footer-title{
+        text-align: left;
+    }
+    position: absolute;
+    bottom: 0;
+}
 #footer-title, #footer-play, #footer-volume{
     width: calc(100% / 3 );
 }
@@ -421,42 +460,6 @@ footer{
     
 }
 
-/*start nav area*/
-#logo-lg{
-    padding: 25px 50px 10px 20px;
-    width: 200px;
-    position: fixed;
-    background-color: black;
-    z-index: 10;
-    margin: 0;
-}
-#logo-sm{
-    display: none;
-}
-#nav-left{
-    margin-top: 100px;
-    span{
-        position: relative;
-        top: -12px;
-    }
-    .text-white{
-        color: white;
-    }
-    }
-    span:hover{
-        color: white;
-    }
-    img{
-        width: 50px;
-        padding-left: 20px;
-        margin: 5px 0;
-    }
-    #left-line{
-        border-left: 1px var(--hrcolor) solid;
-        
-    }
-}
-{}
 
 
 /*start media area*/
